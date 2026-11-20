@@ -1,0 +1,15 @@
+flowchart LR
+    U[PDF / image / TXT / Markdown] --> X{Extraction route}
+    X -->|Text PDF or text file| E[Extract text]
+    X -->|OCR enabled| O[Tesseract OCR<br/>Optional YOLO layout detection]
+    E --> C[Chunk text and retain source/page]
+    O --> C
+    C --> V[Gemini Embedding 001]
+    V --> I[Session-scoped vector index]
+    Q[User question] --> QE[Embed question]
+    QE --> R[Cosine similarity ranking<br/>Top 4; cutoff 0.35]
+    I --> R
+    R -->|No passage passes| F[Insufficient-evidence response]
+    R -->|Relevant passages| G[Gemini Flash-Lite answer model]
+    G --> CV[Validate cited source IDs]
+    CV --> A[Answer and source passages in Streamlit]

@@ -1,0 +1,14 @@
+.venv/
+.python-version
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.streamlit/secrets.toml
+data/rag_index.sqlite3*
+tmpr*/
+*.log

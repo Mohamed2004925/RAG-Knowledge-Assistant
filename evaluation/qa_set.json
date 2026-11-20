@@ -1,0 +1,90 @@
+[
+  {
+    "id": "vacation-01",
+    "question": "How early should I submit a vacation request?",
+    "expected_status": "answerable",
+    "expected_answer": "At least five business days before the first requested day off.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Vacation requests"
+  },
+  {
+    "id": "vacation-02",
+    "question": "Does submitting a vacation request mean it is approved?",
+    "expected_status": "answerable",
+    "expected_answer": "No. The manager must review it and confirm approval or denial in writing.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Vacation requests"
+  },
+  {
+    "id": "expense-01",
+    "question": "When do I need to submit an expense report?",
+    "expected_status": "answerable",
+    "expected_answer": "Within 30 calendar days of the purchase, with an itemized receipt.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Expense reimbursement"
+  },
+  {
+    "id": "expense-02",
+    "question": "When will an approved expense be reimbursed?",
+    "expected_status": "answerable",
+    "expected_answer": "Through the next regular payroll after approval.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Expense reimbursement"
+  },
+  {
+    "id": "security-01",
+    "question": "Can I reuse my company password for another account?",
+    "expected_status": "answerable",
+    "expected_answer": "No. Each company account must have a unique password.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Password security"
+  },
+  {
+    "id": "security-02",
+    "question": "What should I do if I think my password was exposed?",
+    "expected_status": "answerable",
+    "expected_answer": "Change it immediately and notify the IT help desk.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Password security"
+  },
+  {
+    "id": "equipment-01",
+    "question": "How can I request a headset?",
+    "expected_status": "answerable",
+    "expected_answer": "Request one from the IT help desk; availability may vary.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Remote work equipment"
+  },
+  {
+    "id": "equipment-02",
+    "question": "Does the handbook guarantee my equipment request will be approved?",
+    "expected_status": "answerable",
+    "expected_answer": "No. Requests are subject to availability.",
+    "gold_source": "sample_company_handbook.md",
+    "gold_section": "Remote work equipment"
+  },
+  {
+    "id": "out-of-scope-01",
+    "question": "What is the company's annual revenue?",
+    "expected_status": "out_of_scope",
+    "expected_behavior": "Decline to answer because the sample handbook contains no revenue information."
+  },
+  {
+    "id": "out-of-scope-02",
+    "question": "How many vacation days will my manager approve next month?",
+    "expected_status": "out_of_scope",
+    "expected_behavior": "Explain that the handbook describes the request process but does not establish an individual manager's future decision."
+  },
+  {
+    "id": "out-of-scope-03",
+    "question": "What is the CEO's salary?",
+    "expected_status": "out_of_scope",
+    "expected_behavior": "Decline to answer because the sample handbook contains no salary information."
+  },
+  {
+    "id": "out-of-scope-04",
+    "question": "What exact date will my requested keyboard arrive?",
+    "expected_status": "out_of_scope",
+    "expected_behavior": "Say the handbook gives no delivery date."
+  }
+]

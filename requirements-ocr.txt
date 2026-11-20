@@ -1,0 +1,6 @@
+# Optional OCR extension; the core RAG learning app does not require these.
+pymupdf
+pytesseract
+Pillow
+ultralytics
+opencv-python
